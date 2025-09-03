@@ -1,0 +1,199 @@
+% Resume style adapted to friend template (Jake Gutierrez / sb2nov style)
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\usepackage{censor}
+\usepackage{setspace}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins (kept tight and consistent with template)
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Slightly increase line height to reduce bottom whitespace and aid readability
+\setstretch{1.03}
+
+% Section heading formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-1pt}}}
+
+\newcommand{\classesList}[4]{\item\small{{#1 #2 #3 #4 \vspace{-2pt}}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small #1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+    \small #1 & \textbf{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+% Projects without dates
+\newcommand{\resumeProjectHeadingNoDates}[1]{\item\small #1 \vspace{-2pt}}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+% Slightly more generous item spacing to stretch to the bottom neatly
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, itemsep=4pt, topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% ---------------- Header ----------------
+\begin{flushleft}
+  % ---------- left column ----------
+  \begin{minipage}[t]{0.60\textwidth}
+    {\Huge\bfseries Theo Vernacchio}\\[-1pt]
+    \normalsize Bristol, United Kingdom
+  \end{minipage}%
+  % ---------- right column ----------
+  \hfill
+  \begin{minipage}[t]{0.35\textwidth}
+    \raggedleft
+    \href{mailto:theo.vernacchio@gmail.com}{\underline{theo.vernacchio@gmail.com}}\\[-1pt]
+    (+44)\;7847\;893451
+  \end{minipage}
+\end{flushleft}
+
+\vspace{0.55\baselineskip}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Bristol}{Sep. 2024 -- May 2027}
+      {BSc Economics}{Bristol, UK}
+      \resumeItemListStart
+        \resumeItem{\textbf{On track for First-Class Honours}.}
+        \resumeItem{\textbf{Relevant modules:} Development Economics (\textbf{75\%}), Economic Data (\textbf{70\%}), Mathematics, Statistical Methods, Economics.}
+        \resumeItem{Member, \textbf{Bristol Investment Fund}.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Alleyn's School}{Sep. 2017 -- Jul. 2024}
+      {Secondary School}{London, UK}
+      \resumeItemListStart
+        \resumeItem{\textbf{A Levels:} Mathematics, Economics, Geography: \textbf{AAA}}
+        \resumeItem{\textbf{IGCSEs:} 10 subjects -- six \textbf{9}s, three \textbf{8}s}
+        \resumeItem{\textbf{Captain, Fives 1st Team} -- \textbf{U18 National Fives Singles Finalist}; Tennis 1st Team.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Hospitality (Seasonal)}{May -- Jul. 2025}
+      {Waiter/Bartender}{London, UK}
+      \resumeItemListStart
+        \resumeItem{Delivered table service to \textbf{100+} guests at Royal Ascot.}
+        \resumeItem{Managed a team of \textbf{8} at the Chelsea Flower Show corporate lounge.}
+        \resumeItem{Hosted a VIP lounge for \textbf{50} guests at the Royal Albert Hall: managed a private box of 8.}
+        \resumeItem{Led a team of \textbf{6} at a high-profile \textbf{3-day} wedding; praised as ``particularly phenomenal.''}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------LEADERSHIP-----------
+\section{Leadership}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {J.P. Morgan}{} % virtual programme
+      {Investment Banking Job Simulation (Forage)}{}
+      \resumeItemListStart
+        \resumeItem{Screened and prioritised M\&A targets against client strategic and financial criteria.}
+        \resumeItem{Built a \textbf{DCF} with scenario analysis; adjusted for competitor bids and supply-chain disruption.}
+        \resumeItem{Produced a \textbf{2-page} client brief summarising company profile and auction process.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Royal Bank of Canada (RBC)}{Aug. 2025}
+      {Insight Day}{London, UK}
+      \resumeItemListStart
+        \resumeItem{Shadowed traders on the London trading floor; contrasted human execution with \textbf{VWAP} algorithms for liquidity and pricing.}
+        \resumeItem{Reviewed large corporate share buyback mechanics with the Head of European Equity Solutions; discussed tactics to minimise market impact and achieve best execution.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.00in, label={}]
+  \small\item{
+    \textbf{Programming}{: Python, JavaScript} \\
+    \textbf{Data/Analysis}{: Excel} \\
+    \textbf{Tools}{: RStudio} \\
+    \textbf{Web}{: HTML, CSS}
+  }
+\end{itemize}
+\vspace{-10pt}
+
+%-----------ADDITIONAL-----------
+\section{Additional}
+{\small
+\begin{itemize}[leftmargin=0.00in,label={},itemsep=4pt,topsep=2pt]
+  \item \textbf{Charles Stanley}: Attended a wealth management insight day; supported fund management through research.
+  \item \textbf{Online Course}: 2-day investment banking course covering valuation methods, financial modelling, and industry insights (former Head of European Equity Research at Barclays).
+  \item \textbf{Publications}: Created \href{https://vernacch.io}{\underline{vernacch.io}} -- monthly micro \& macroeconomic analysis detailing portfolio development; delivered \textbf{8.5\%} monthly ROI.
+  \item \textbf{Certificates}: LAMDA Grade 8 Distinction; SEQ Level 1 Swimming Assistant (Teaching).
+  \item \textbf{Interests}: Self-taught piano \& guitar; Bristol Squash 3rd Team.
+\end{itemize}
+}
+
+\end{document}
